@@ -1,0 +1,21 @@
+---  # playbook for pulling docker img from registory and creating atomcat  container and expose through browser
+- name: playboolk
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: pull docker images
+    command: docker pull ravimore001/my-app:latest
+    args:
+      chdir: /opt
+
+  - name: remove existing images
+    command: docker rmi ravimore001/my-app:latest
+    args:
+      chdir: /opt
+
+  - name: create container
+    command: docker run -itd --name my-app -p 8080:8080 ravimore001/my-app:latest
+    args:
+      chdir: /opt
+
