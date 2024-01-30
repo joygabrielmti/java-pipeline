@@ -1,0 +1,2 @@
+[webserver]
+172.31.12.7  ansadmin = ec2-user
