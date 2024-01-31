@@ -1,2 +1,2 @@
 [webserver]
-172.31.12.7 ansadmin=ec2-user 
+172.31.12.7 ec2-user 
