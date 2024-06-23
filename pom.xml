@@ -27,4 +27,19 @@
 	<build>
 		<finalName>LoginWebApp</finalName>
 	</build>
+	<distributionManagement>
+    <repository>
+        <id>pyari</id>
+        <url>http://3.110.161.95:8081/repository/pyari</url>
+    </repository>
+</distributionManagement>
+	<servers>
+    <server>
+        <id>pyari</id>
+        <username>admin</username>
+        <password>Rutu@2002</password>
+    </server>
+</servers>
+
+
 </project>
