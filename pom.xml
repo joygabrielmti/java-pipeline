@@ -6,7 +6,20 @@
   <packaging>war</packaging>
   <version>1.0.0</version>
   <name>LoginWebApp Maven Webapp</name>
-  <url>http://maven.apache.org</url>	
+  <url>http://maven.apache.org</url>
+  <distributionManagement>
+	  <repository>
+		  <id>nexus</id>
+		  <name>samplerepo</name>
+		  <url>http://13.201.70.73:8081/repository/samplerepo/</url>
+	  </repository>
+
+	  <snapshotRepository>
+		<id>nexus</id>
+		<name>samplerepo</name>
+		 <url>http://13.201.70.73:8081/repository/samplerepo/</url>  
+	  </snapshotRepository>
+  </distributionManagement>
   <dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
